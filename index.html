@@ -2,223 +2,71 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>Shaka Player Playlist</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.16.3/shaka-player.compiled.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-*{
+body{
     margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,body{
-    width:100%;
-    height:100%;
-    background:#000;
     overflow:hidden;
-    font-family:Arial,sans-serif;
 }
 
-video{
-    width:100%;
-    height:100%;
-    background:#000;
+#jwplayerDiv{
+    width:100vw;
+    height:100vh;
 }
 
-#menu{
-    position:absolute;
-    left:10px;
-    top:10px;
-    width:220px;
-    background:rgba(0,0,0,.75);
-    border-radius:8px;
-    overflow:hidden;
-    z-index:1000;
-}
-
-#title{
-    background:#1e88e5;
-    color:#fff;
-    padding:12px;
-    text-align:center;
-    font-weight:bold;
-}
-
-#channelList{
-    list-style:none;
-    max-height:300px;
-    overflow:auto;
-}
-
-#channelList li{
-    color:#fff;
-    padding:12px;
-    cursor:pointer;
-    border-bottom:1px solid #333;
-    transition:.2s;
-}
-
-#channelList li:hover{
-    background:#444;
-}
-
-#channelList li.active{
-    background:#1e88e5;
-}
-
-#status{
-    position:absolute;
-    bottom:15px;
-    left:15px;
-    color:#fff;
-    background:rgba(0,0,0,.6);
-    padding:8px 12px;
-    border-radius:5px;
-    font-size:14px;
+/* Ẩn toàn bộ control JWPlayer */
+.jw-controls,
+.jw-controlbar,
+.jw-display,
+.jw-button-container,
+.jw-settings-menu,
+.jw-slider-container{
+    display:none !important;
 }
 </style>
-
 </head>
+
 <body>
 
-<div id="menu">
-    <div id="title">Danh sách kênh</div>
-    <ul id="channelList"></ul>
-</div>
+<div id="jwplayerDiv"></div>
 
-<video id="video" controls autoplay playsinline></video>
-
-<div id="status">Đang khởi tạo...</div>
+<script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
 
 <script>
-
-const channels=[
-
-{
-    name:"HOLLYWOOD CLASSIC",
-    manifest:"https://livevlisctcdnw.seenow.vn/mean/BM1/manifest.mpd",
-    keys:{
-        "a7c942778e874d43be92b8d0a0cd11b4":
-        "6d54358306571658ffdb952c6560688b"
-    }
-},
-
-{
-    name:"HBO",
-    manifest:"https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/hbo.smil/manifest.mpd",
-    keys:{
-        "Cd3-PWOGPK-ut50FRrCYqw":
-        "PeDzjc8BSCff1b7Dh0PGog"
-    }
-}
-
-];
-
-shaka.polyfill.installAll();
-
-let player;
-
-async function init(){
-
-    if(!shaka.Player.isBrowserSupported()){
-        alert("Browser không hỗ trợ Shaka Player");
-        return;
-    }
-
-    const video=document.getElementById("video");
-
-    player=new shaka.Player(video);
-
-    player.addEventListener("error",event=>{
-        console.error(event.detail);
-        document.getElementById("status").innerText="Lỗi phát";
-    });
-
-    createPlaylist();
-
-}
-
-function createPlaylist(){
-
-    const list=document.getElementById("channelList");
-
-    channels.forEach((item,index)=>{
-
-        const li=document.createElement("li");
-
-        li.textContent=item.name;
-
-        li.onclick=()=>{
-
-            document.querySelectorAll("#channelList li").forEach(e=>{
-                e.classList.remove("active");
-            });
-
-            li.classList.add("active");
-
-            loadChannel(index);
-
-        };
-
-        list.appendChild(li);
-
-    });
-
-    list.children[0].click();
-
-}
-
-async function loadChannel(index){
-
-    const item=channels[index];
-
-    document.getElementById("status").innerText="Đang tải: "+item.name;
-
-    try{
-
-        await player.unload();
-
-    }catch(e){}
-
-    player.configure({
-
-        drm:{
-            clearKeys:item.keys
-        },
-
-        streaming:{
-            bufferingGoal:30,
-            rebufferingGoal:2
+var config = {
+    file: "https://livevlisctcdnw.seenow.vn/mean/BM1/manifest.mpd",
+    drm: {
+        clearkey: {
+            keyId: "Cd3+PWOGPK+ut50FRrCYqw",
+            key: "PeDzjc8BSCff1b7Dh0PGog"
         }
-
-    });
-
-    try{
-
-        await player.load(item.manifest);
-
-        document.getElementById("video").play();
-
-        document.getElementById("status").innerText="Đang phát: "+item.name;
-
-        console.log("Playing",item.name);
-
-    }catch(error){
-
-        console.error(error);
-
-        document.getElementById("status").innerText="Không phát được "+item.name;
-
     }
+};
 
-}
+jwplayer("jwplayerDiv").setup({
+    file: config.file,
+    type: "dash",
 
-document.addEventListener("DOMContentLoaded",init);
+    autostart: true,
 
+    /* Mở tiếng */
+    mute: true,
+    volume: 100,
+
+    /* Ẩn control */
+    controls: false,
+
+    width: "100%",
+    height: "100%",
+
+    drm: {
+        clearkey: {
+            keyId: config.drm.clearkey.keyId,
+            key: config.drm.clearkey.key
+        }
+    }
+});
 </script>
 
 </body>
