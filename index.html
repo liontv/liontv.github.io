@@ -1,73 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body{
-    margin:0;
-    overflow:hidden;
-}
-
-#jwplayerDiv{
-    width:100vw;
-    height:100vh;
-}
-
-/* Ẩn toàn bộ control JWPlayer */
-.jw-controls,
-.jw-controlbar,
-.jw-display,
-.jw-button-container,
-.jw-settings-menu,
-.jw-slider-container{
-    display:none !important;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Player DASH ClearKey</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
+    }
+    #jwplayerDiv {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+   .error-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      background: rgba(255,0,0,0.8);
+      padding: 16px 24px;
+      border-radius: 8px;
+      display: none;
+      z-index: 9999;
+      max-width: 90%;
+      text-align: center;
+    }
+  </style>
+  <!-- Thư viện JW Player Free. Có watermark. -->
+  <script src="https://cdn.jwplayer.com/libraries/SAH65Xzg.js"></script>
 </head>
-
 <body>
+  <div id="jwplayerDiv"></div>
+  <div id="errorBox" class="error-box"></div>
 
-<div id="jwplayerDiv"></div>
+  <script>
+    const config = {
+      file: "https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/hbo.smil/manifest.mpd", // <-- Thay link MPD của bạn vào đây
 
-<script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+      // Cách 1: JWK JSON
+      drmKey: '{"keys":[{"kty":"oct","k":"PeDzjc8BSCff1b7Dh0PGog","kid":"Cd3+PWOGPK+ut50FRrCYqw"}],"type":"temporary"}'
 
-<script>
-var config = {
-    file: "https://livevlisctcdnw.seenow.vn/mean/BM1/manifest.mpd",
-    drm: {
-        clearkey: {
-            keyId: "Cd3+PWOGPK+ut50FRrCYqw",
-            key: "PeDzjc8BSCff1b7Dh0PGog"
-        }
+      // Cách 2: Hex kid:key
+      // drmKey: "a7c942778e874d43be92b8d0a0cd11b4:6d54358306571658ffdb952c6560688b"
+    };
+
+    function showError(msg) {
+      const box = document.getElementById('errorBox');
+      box.textContent = msg;
+      box.style.display = 'block';
+      console.error(msg);
     }
-};
 
-jwplayer("jwplayerDiv").setup({
-    file: config.file,
-    type: "dash",
+    function parseDrm(keyData) {
+      if (!keyData) return null;
 
-    autostart: true,
+      // 1. Dạng hex: kid:key
+      if (typeof keyData === "string" && keyData.includes(":") &&!keyData.trim().startsWith("{")) {
+        const parts = keyData.split(":");
+        if (parts.length!== 2) return null;
+        return { keyId: parts[0].trim(), key: parts[1].trim() };
+      }
 
-    /* Mở tiếng */
-    mute: true,
-    volume: 100,
-
-    /* Ẩn control */
-    controls: false,
-
-    width: "100%",
-    height: "100%",
-
-    drm: {
-        clearkey: {
-            keyId: config.drm.clearkey.keyId,
-            key: config.drm.clearkey.key
+      // 2. Dạng JWK: {"keys":[{"kty":"oct","k":"...","kid":"..."}]}
+      if (typeof keyData === "string" && keyData.trim().startsWith("{")) {
+        try {
+          const jwk = JSON.parse(keyData);
+          if (!jwk.keys ||!jwk.keys[0]) return null;
+          return { keyId: jwk.keys[0].kid, key: jwk.keys[0].k };
+        } catch (e) {
+          showError("Lỗi parse JWK: " + e.message);
+          return null;
         }
+      }
+      return null;
     }
-});
-</script>
 
+    const clearkey = parseDrm(config.drmKey);
+    if (!clearkey) {
+      showError("Sai format drmKey. Dùng 'kid:key' hoặc JWK JSON.");
+    }
+
+    jwplayer("jwplayerDiv").setup({
+      file: config.file,
+      type: "dash",
+      autostart: true,
+      mute: true, // Bắt buộc true để autoplay trên mobile/desktop Chrome
+      width: "100%",
+      height: "100%",
+      controls: true, // Để false sẽ ẩn toàn bộ UI
+      displaytitle: false,
+      displaydescription: false,
+      drm: clearkey? { clearkey: clearkey } : {}
+    });
+
+    jwplayer().on("ready", () => {
+      console.log("JWPlayer ready");
+    });
+
+    jwplayer().on("error", e => {
+      showError("Lỗi phát: " + (e.message || "Unknown"));
+    });
+
+    jwplayer().on("setupError", e => {
+      showError("Lỗi setup: " + (e.message || "Unknown"));
+    });
+
+    // Bấm vào player để bật tiếng nếu muốn
+    jwplayer().on("firstFrame", () => {
+      // document.getElementById('jwplayerDiv').addEventListener('click', () => {
+      // jwplayer().setMute(false);
+      // });
+    });
+  </script>
 </body>
 </html>
