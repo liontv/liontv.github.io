@@ -1,30 +1,30 @@
 [
   {
-    "number": "1",
+    "number": "001",
     "name": "VTV1",
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv1.png",
     "epg": "210",
-    "url": "https://live.fptplay53.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8",
+    "url": "https://live-a.fptplay53.net/live/media/vtv1/live247-hls-avc/index.m3u8",
+    "drm": ""
+  },
+  {
+    "number": "002",
+    "name": "VTV2",
+    "group": "Kênh DRM",
+    "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv2.png",
+    "epg": "",
+    "url": "https://vips-livecdn.fptplay.net/live/media/v2abr/live247-hls-avc/index.m3u8",
     "drm": ""
   },
   {
     "number": "",
-    "name": "HBO",
-    "group": "Kênh DRM",
-    "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv2.png",
-    "epg": "",
-    "url": "https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/hbo.smil/manifest.mpd",
-    "drm": "{\"keys\":[{\"kty\":\"oct\",\"k\":\"PeDzjc8BSCff1b7Dh0PGog\",\"kid\":\"Cd3+PWOGPK+ut50FRrCYqw\"}],\"type\":\"temporary\"}"
-  },
-  {
-    "number": "",
-    "name": "BOX",
+    "name": "VTV3",
     "group": "Kênh DRM",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv3.png",
     "epg": "",
-    "url": "https://livevlisctcdnw.seenow.vn/mean/BM1/manifest.mpd",
-    "drm": "a7c942778e874d43be92b8d0a0cd11b4:6d54358306571658ffdb952c6560688b"
+    "url": "https://vips-livecdn.fptplay.net/live/media/v3abr/live247-hls-avc/index.m3u8",
+    "drm": ""
   },
   {
     "number": "",
@@ -32,7 +32,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv4.png",
     "epg": "",
-    "url": "https://live.fptplay53.net/fnxch2/vtv4hd_abr.smil/chunklist.m3u8",
+    "url": "https://live-a.fptplay53.net/live/media/vtv4/live247-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -41,7 +41,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv5.png",
     "epg": "",
-    "url": "https://live-a.fptplay53.net/live/media/VTV5HD/live_hls_avc/index.m3u8",
+    "url": "https://live-a.fptplay53.net/live/media/vtv5/live247-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -50,7 +50,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv5taynguyen.png",
     "epg": "",
-    "url": "https://live.fptplay53.net/fnxhd1/vtv5taynguyen_vhls.smil/chunklist.m3u8",
+    "url": "https://vips-livecdn.fptplay.net/live/media/vtv5tn/live-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -59,7 +59,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv5taynambo.png",
     "epg": "",
-    "url": "https://live.fptplay53.net/fnxhd1/vtv5tnb_vhls.smil/chunklist.m3u8",
+    "url": "https://vips-livecdn.fptplay.net/live/media/vtv5tnb/live-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -68,7 +68,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv7.png",
     "epg": "",
-    "url": "https://live.fptplay53.net/fnxhd1/vtv7hd_vhls.smil/chunklist.m3u8",
+    "url": "https://vips-livecdn.fptplay.net/live/media/v7abr/live247-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -77,7 +77,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv8.png",
     "epg": "",
-    "url": "https://live.fptplay53.net/epzhd1/vtv8hd_vhls.smil/chunklist.m3u8",
+    "url": "https://vips-livecdn.fptplay.net/live/media/vtv8/live-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -86,7 +86,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv9.png",
     "epg": "",
-    "url": "https://live.fptplay53.net/fnxhd1/vtv9_vhls.smil/chunklist.m3u8",
+    "url": "https://vips-livecdn.fptplay.net/live/media/v9abr/live247-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -95,7 +95,7 @@
     "group": "Kênh VTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtv10.png",
     "epg": "",
-    "url": "https://live-a.fptplay53.net/live/media/VTV_can_tho/live_hls_avc/index.m3u8",
+    "url": "https://vips-livecdn.fptplay.net/live/media/v10abr/live247-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -104,7 +104,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab1.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/GIAITRI_TV_HD/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=180",
     "drm": ""
   },
   {
@@ -113,7 +113,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab2.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/PHIM_VIET/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=175",
     "drm": ""
   },
   {
@@ -122,7 +122,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab3.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/THETHAO_HD/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=",
     "drm": ""
   },
   {
@@ -131,7 +131,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab4.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/VAN_HOA/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=181",
     "drm": ""
   },
   {
@@ -140,7 +140,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab5.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/E_CHANNEL/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=182",
     "drm": ""
   },
   {
@@ -158,7 +158,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab7.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/O2_TV/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=136",
     "drm": ""
   },
   {
@@ -167,7 +167,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab8.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/BIBI/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=178",
     "drm": ""
   },
   {
@@ -176,7 +176,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab9.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/INFO_TV/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=189",
     "drm": ""
   },
   {
@@ -185,7 +185,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab10.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/FILM_TV/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=176",
     "drm": ""
   },
   {
@@ -194,7 +194,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab12.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/STYLE_TV_HD/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=184",
     "drm": ""
   },
   {
@@ -212,7 +212,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab17.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/YEAH1_TV/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=186",
     "drm": ""
   },
   {
@@ -230,7 +230,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab19.png",
     "epg": "",
-    "url": "",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=177",
     "drm": ""
   },
   {
@@ -239,7 +239,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab20.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/VFAMILY/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=187",
     "drm": ""
   },
   {
@@ -248,7 +248,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab21.png",
     "epg": "",
-    "url": "",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=179",
     "drm": ""
   },
   {
@@ -257,7 +257,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab22.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/LIFE_TV/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=188",
     "drm": ""
   },
   {
@@ -266,7 +266,7 @@
     "group": "Kênh VTVCab",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/vtvcab23.png",
     "epg": "",
-    "url": "https://livebytsct.vtvprime.vn/livesnv2/THETHAO_GOLF_HD/index.m3u8",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=169",
     "drm": ""
   },
   {
@@ -275,7 +275,7 @@
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htv1.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/BM1/index.m3u8",
+    "url": "https://live.fptplay53.net/epzhd1/htv1_hls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -284,7 +284,7 @@
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htv2.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/BOXHIT/index.m3u8",
+    "url": "https://live.fptplay53.net/epzhd1/htv2hd_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -293,16 +293,16 @@
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htv3.png",
     "epg": "",
-    "url": "https://liveh12.vtvprime.vn/hls/HC/index.m3u8",
+    "url": "https://live.fptplay53.net/epzhd1/htv3_hls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
     "number": "",
-    "name": "HTV4 HTVKey",
+    "name": "HTV4",
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htv4.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htv4_hls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -311,7 +311,7 @@
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htv5.png",
     "epg": "",
-    "url": "",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=151",
     "drm": ""
   },
   {
@@ -320,7 +320,7 @@
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htv7.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htv7hd_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -329,7 +329,7 @@
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htv9.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htv9hd_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -338,7 +338,7 @@
     "group": "Kênh HTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htvthethao.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/live/media/htvthethao/live247-hls-avc/index.m3u8",
     "drm": ""
   },
   {
@@ -347,7 +347,7 @@
     "group": "Kênh HTVC",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/htvcplus.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htvcplus_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -356,7 +356,7 @@
     "group": "Kênh HTVC",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/phim.png",
     "epg": "",
-    "url": "",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=15",
     "drm": ""
   },
   {
@@ -365,7 +365,7 @@
     "group": "Kênh HTVC",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/thuanviet.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htvcthuanviethd_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -374,7 +374,7 @@
     "group": "Kênh HTVC",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/giadinh.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htvcgiadinh_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -383,7 +383,7 @@
     "group": "Kênh HTVC",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/phunu.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htvcphunu_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -392,7 +392,7 @@
     "group": "Kênh HTVC",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/dulich.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd1/htvcdulich_vhls.smil/chunklist.m3u8",
     "drm": ""
   },
   {
@@ -410,7 +410,7 @@
     "group": "Kênh SCTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/sctv2.png",
     "epg": "",
-    "url": "",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=201",
     "drm": ""
   },
   {
@@ -437,7 +437,8 @@
     "group": "Kênh SCTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/sctv6.png",
     "epg": "",
-    "url": "",
+    "url": "https://live.fptplay53.net/epzhd2/film360_vhls.smil/chunklist.m3u8",
+    "drm": ""
     "drm": ""
   },
   {
@@ -509,8 +510,8 @@
     "group": "Kênh SCTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/sctv15.png",
     "epg": "",
-    "url": "https://livebytsct.vtvprime.vn/livesnv2/SCTV15HD/index.m3u8",
-    "drm": ""
+    "url": "https://livevlisctcdnw.seenow.vn/mean/SCTV15HD/manifest.mpd",
+    "drm": "a7c942778e874d43be92b8d0a0cd11b4:6d54358306571658ffdb952c6560688b"
   },
   {
     "number": "",
@@ -527,8 +528,8 @@
     "group": "Kênh SCTV",
     "logo": "https://raw.githubusercontent.com/liontv/liontv.github.io/refs/heads/main/logo/sctv17.png",
     "epg": "",
-    "url": "",
-    "drm": ""
+    "url": "https://livevlisctcdnw.seenow.vn/mean/SCTV17/manifest.mpd",
+    "drm": "a7c942778e874d43be92b8d0a0cd11b4:6d54358306571658ffdb952c6560688b"
   },
   {
     "number": "",
