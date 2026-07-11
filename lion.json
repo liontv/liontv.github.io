@@ -1010,7 +1010,7 @@
   {
     "number": "113",
     "name": "THVL1 Vĩnh long",
-    "group": "Địa phương",
+    "group": "THVL",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong1.png",
     "epg": "",
     "url": "https://live.fptplay53.net/epzhd2/vinhlong1_vhls.smil/chunklist.m3u8",
@@ -1019,7 +1019,7 @@
   {
     "number": "114",
     "name": "THVL2 Vĩnh long",
-    "group": "Địa phương",
+    "group": "THVL",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong2.png",
     "epg": "",
     "url": "https://live.fptplay53.net/epzhd2/vinhlong2_vhls.smil/chunklist.m3u8",
@@ -1028,7 +1028,7 @@
   {
     "number": "115",
     "name": "THVL3 Vĩnh long",
-    "group": "Địa phương",
+    "group": "THVL",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong3.png",
     "epg": "",
     "url": "https://live.fptplay53.net/epzhd2/vinhlong3_vhls.smil/chunklist.m3u8",
@@ -1037,7 +1037,7 @@
   {
     "number": "116",
     "name": "THVL4 Vĩnh long",
-    "group": "Địa phương",
+    "group": "THVL",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong4.png",
     "epg": "",
     "url": "https://freem3u.xyz/api/live/play.m3u8?vid=220",
@@ -1046,7 +1046,7 @@
   {
     "number": "117",
     "name": "THVL5 Vĩnh long",
-    "group": "Địa phương",
+    "group": "THVL",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong5.png",
     "epg": "",
     "url": "https://freem3u.xyz/api/live/play.m3u8?vid=91",
