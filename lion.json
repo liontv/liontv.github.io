@@ -579,7 +579,7 @@
     "number": "065",
     "name": "SCTV Phim tổng hợp",
     "group": "Kênh SCTV",
-    "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/sctvphimtonghop.png",
+    "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/sctvphim.png",
     "epg": "766",
     "url": "https://hoiquan.dpdns.org/VTVGo/?sctvphim",
     "drm": ""
