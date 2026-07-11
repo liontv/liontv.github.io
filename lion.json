@@ -571,13 +571,13 @@
     "name": "SCTV22 Ssport1",
     "group": "Kênh SCTV",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/sctv22.png",
-    "epg": "",
-    "url": "829",
+    "epg": "829",
+    "url": "",
     "drm": ""
   },
   {
     "number": "065",
-    "name": "SCTV Phim tổng hợp",
+    "name": "SCTV PHIM TỔNG HỢP",
     "group": "Kênh SCTV",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/sctvphim.png",
     "epg": "766",
