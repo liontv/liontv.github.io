@@ -131,8 +131,8 @@
     "group": "Kênh VTVCab",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vtvcab3.png",
     "epg": "200",
-    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=",
-    "drm": ""
+    "url": "https://cdnet-cdn-01.onsports.vn/onplus/BONGDA_HD/manifest.mpd",
+    "drm": "c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
   },
   {
     "number": "016",
@@ -158,8 +158,8 @@
     "group": "Kênh VTVCab",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vtvcab6.png",
     "epg": "203",
-    "url": "https://liveh12.vtvprime.vn/hls/HAY_TV/index.m3u8",
-    "drm": ""
+    "url": "https://cdnet-cdn-01.onsports.vn/onplus/HAY_TV/manifest.mpd",
+    "drm": "c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
   },
   {
     "number": "019",
@@ -212,8 +212,8 @@
     "group": "Kênh VTVCab",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vtvcab16.png",
     "epg": "208",
-    "url": "https://liveh12.vtvprime.vn/hls/BONGDA_HD/index.m3u8",
-    "drm": ""
+    "url": "https://cdnet-cdn-01.onsports.vn/onplus/BONGDA_HD/manifest.mpd",
+    "drm": "c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
   },
   {
     "number": "025",
@@ -230,8 +230,8 @@
     "group": "Kênh VTVCab",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vtvcab18.png",
     "epg": "441",
-    "url": "https://liveh12.vtvprime.vn/hls/THETHAO_TINTUC_HD/index.m3u8",
-    "drm": ""
+    "url": "https://cdnet-cdn-01.onsports.vn/onplus/THETHAO_TINTUC_HD/manifest.mpd",
+    "drm": "c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
   },
   {
     "number": "027",
@@ -275,8 +275,8 @@
     "group": "Kênh VTVCab",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vtvcab23.png",
     "epg": "415",
-    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=169",
-    "drm": ""
+    "url": "https://cdnet-cdn-01.onsports.vn/onplus/THETHAO_GOLF_HD/manifest.mpd",
+    "drm": "c410ddc6a75244639fd0561fba5ef19b:30d13ea42031b9ff8271e5dc37d90e10"
   },
   {
     "number": "032",
@@ -608,7 +608,7 @@
     "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/angiang1.png",
     "epg": "433",
-    "url": "https://tv.angiangtv.vn/live/kgtv/kgtv.m3u8",
+    "url": "https://live.fptplay53.net/epzsd1/angiang01_hls.smil/chunklist.m3u8 ",
     "drm": ""
   },
   {
@@ -617,7 +617,7 @@
     "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/angiang2.png",
     "epg": "34",
-    "url": "https://tv.angiangtv.vn/live/kgtv1/kgtv1.m3u8",
+    "url": "https://live.fptplay53.net/epzhd2/angiang02hd_vhls.smil/chunklist.m3u8 ",
     "drm": ""
   },
   {
@@ -626,7 +626,7 @@
     "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/angiang3.png",
     "epg": "",
-    "url": "https://tv.angiangtv.vn/live/kgtv2/kgtv2.m3u8",
+    "url": "https://live.fptplay53.net/epzsd1/angiang03_hls.smil/chunklist.m3u8 ",
     "drm": ""
   },
   {
@@ -837,6 +837,15 @@
     "drm": ""
   },
   {
+    "number": "118",
+    "name": "KTV1 Khánh hòa",
+    "group": "Địa phương",
+    "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/khanhhoa.png",
+    "epg": "",
+    "url": "https://live.fptplay53.net/epzsd1/khanhhoa01_hls.smil/chunklist.m3u8",
+    "drm": ""
+  },
+  {
     "number": "094",
     "name": "LTV Lai châu",
     "group": "Địa phương",
@@ -1010,7 +1019,7 @@
   {
     "number": "113",
     "name": "THVL1 Vĩnh long",
-    "group": "THVL",
+    "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong1.png",
     "epg": "",
     "url": "https://live.fptplay53.net/epzhd2/vinhlong1_vhls.smil/chunklist.m3u8",
@@ -1019,7 +1028,7 @@
   {
     "number": "114",
     "name": "THVL2 Vĩnh long",
-    "group": "THVL",
+    "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong2.png",
     "epg": "",
     "url": "https://live.fptplay53.net/epzhd2/vinhlong2_vhls.smil/chunklist.m3u8",
@@ -1028,7 +1037,7 @@
   {
     "number": "115",
     "name": "THVL3 Vĩnh long",
-    "group": "THVL",
+    "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong3.png",
     "epg": "",
     "url": "https://live.fptplay53.net/epzhd2/vinhlong3_vhls.smil/chunklist.m3u8",
@@ -1037,7 +1046,7 @@
   {
     "number": "116",
     "name": "THVL4 Vĩnh long",
-    "group": "THVL",
+    "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong4.png",
     "epg": "",
     "url": "https://freem3u.xyz/api/live/play.m3u8?vid=220",
@@ -1046,7 +1055,7 @@
   {
     "number": "117",
     "name": "THVL5 Vĩnh long",
-    "group": "THVL",
+    "group": "Địa phương",
     "logo": "https://cdn.jsdelivr.net/gh/liontv/liontv.github.io@main/logo/vinhlong5.png",
     "epg": "",
     "url": "https://freem3u.xyz/api/live/play.m3u8?vid=91",
